@@ -1,0 +1,23 @@
+{
+  "name": "primes",
+  "version": "1.0.0",
+  "description": "A re-implementation of a college Lisp project to explore how closures work in JavaScript. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davehrtng/primes.git"
+  },
+  "keywords": [
+    "prime",
+    "closure"
+  ],
+  "author": "David Harting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davehrtng/primes/issues"
+  },
+  "homepage": "https://github.com/davehrtng/primes#readme"
+}
