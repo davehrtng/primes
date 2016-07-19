@@ -25,7 +25,7 @@ describe('Primes', function() {
       assert.deepEqual([1, 2, 3, 5], primes.listUpTo(5));
     });
 
-    var primesLessThan50 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
+    var primesLessThan50 = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
     it('should return ' + primesLessThan50 + ' when the argument is 50', function() {
       assert.deepEqual([], primes.listUpTo(50));
     });
