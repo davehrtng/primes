@@ -39,7 +39,7 @@ function isPrime(x) {
  */
 function listPrimesUpTo(upperBound) {
   var primes = [];
-  for(var i = 1; i < upperBound; i++) {
+  for(var i = 1; i <= upperBound; i++) {
     if(isPrime(i)) {
       primes.push(i);
     }
