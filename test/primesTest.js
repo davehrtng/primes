@@ -39,33 +39,33 @@ describe('Primes', function() {
 
   describe('#isPrime', function() {
 
-    it('1 is prime', function() {
+    it('1? Yes', function() {
       assert.equals(true, primes.isPrime(1));
     });
 
-    it('2 is prime', function() {
+    it('2? Yes', function() {
       assert.equals(true, primes.isPrime(2));
     })
 
-    it('3 is prime', function() {
+    it('3? Yes', function() {
       assert.equals(true, primes.isPrime(3));
     })
 
-    it('4 is not prime', function() {
+    it('4? no', function() {
       assert.equals(false, primes.isPrime(4));
     });
 
-    it('5 is prime', function() {
+    it('5? no', function() {
       assert.equals(true, primes.isPrime(5));
     })
 
-    it('19 is prime', function() {
-      assert.equals(true, primes.isPrime(19));
-    })
-
-    it('15 is not prime', function(){
+    it('15? no', function(){
       assert.equals(false, primes.isPrime(15));
     });
+
+    it('19? yes', function() {
+      assert.equals(true, primes.isPrime(19));
+    })
   });
 
 });

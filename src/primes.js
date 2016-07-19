@@ -12,30 +12,9 @@ function isInteger(x) {
   return n % 1 === 0;
 }
 
-/**
- * Determines whether any of the divisors divide x.
- *
- * @param potentialDivisors we will attempt to divide x by each of these
- * @param x we are checking if the potential divisors divide this
- * @return true if at least one of the prime divisors divides x
- */
-function doesDivide(potentialDivisors, x) {
-  for(var i = 0; i < primeDivisors.length; i++){
-    var divisor = potentialDivisors[i];
-    if(divisor != 1 && divisor != x) {
-      var quotient = x / divisor;
-      if(isInteger(quotient)){
-        return true; // we found a divisor!
-      }
-    }
-  }
-
-  return false; // we made it through the loop without finding a divisor
-}
-
 function isPrime(x) {
   // base cases
-  if(x === 1 || x === 2 || x ===3) {
+  if(x === 1 || x === 2 || x === 3) {
     return true;
   }
   // x is even
