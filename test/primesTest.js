@@ -36,4 +36,36 @@ describe('Primes', function() {
     });
 
   });
+
+  describe('#isPrime', function() {
+
+    it('1 is prime', function() {
+      assert.equals(true, primes.isPrime(1));
+    });
+
+    it('2 is prime', function() {
+      assert.equals(true, primes.isPrime(2));
+    })
+
+    it('3 is prime', function() {
+      assert.equals(true, primes.isPrime(3));
+    })
+
+    it('4 is not prime', function() {
+      assert.equals(false, primes.isPrime(4));
+    });
+
+    it('5 is prime', function() {
+      assert.equals(true, primes.isPrime(5));
+    })
+
+    it('19 is prime', function() {
+      assert.equals(true, primes.isPrime(19));
+    })
+
+    it('15 is not prime', function(){
+      assert.equals(false, primes.isPrime(15));
+    });
+  });
+
 });
