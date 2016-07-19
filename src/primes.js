@@ -38,7 +38,13 @@ function isPrime(x) {
  * This function and it's helpers is a re-implementation of a college Lisp project.
  */
 function listPrimesUpTo(upperBound) {
-    return [1, 2, 3, 5, 7, 9, 11, 13];
+  var primes = [];
+  for(var i = 1; i < upperBound; i++) {
+    if(isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  return primes;
 }
 
 exports.listUpTo = listPrimesUpTo;
