@@ -40,31 +40,31 @@ describe('Primes', function() {
   describe('#isPrime', function() {
 
     it('1? Yes', function() {
-      assert.equals(true, primes.isPrime(1));
+      assert.isTrue(primes.isPrime(1));
     });
 
     it('2? Yes', function() {
-      assert.equals(true, primes.isPrime(2));
+      assert.isTrue(true, primes.isPrime(2));
     })
 
     it('3? Yes', function() {
-      assert.equals(true, primes.isPrime(3));
+      assert.isTrue(true, primes.isPrime(3));
     })
 
     it('4? no', function() {
-      assert.equals(false, primes.isPrime(4));
+      assert.isFalse(primes.isPrime(4));
     });
 
-    it('5? no', function() {
-      assert.equals(true, primes.isPrime(5));
+    it('5? yes', function() {
+      assert.isTrue(primes.isPrime(5));
     })
 
     it('15? no', function(){
-      assert.equals(false, primes.isPrime(15));
+      assert.isFalse(primes.isPrime(15));
     });
 
     it('19? yes', function() {
-      assert.equals(true, primes.isPrime(19));
+      assert.isTrue(primes.isPrime(19));
     })
   });
 

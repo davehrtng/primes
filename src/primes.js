@@ -19,17 +19,17 @@ function isPrime(x) {
   }
   // x is even
   else if(x % 2 === 0) {
-    return true;
+    return false;
   }
   else {
     // check if x is divisible by odd numbers less than or equal to it's square root
     var sqrt = Math.sqrt(x);
     for(var i = 3; i <= sqrt; i += 2) {
         if(isInteger(x / i)) {
-          return true; // we found a divisor!
+          return false; // We found a divisor. Not prime!
         }
     }
-    return false; // we made it through the loop without finding a divisor
+    return true; // We made it through the loop without finding a divisor. Prime!
   }
 }
 
