@@ -9,7 +9,7 @@
  * @return true if x is an integer. Otherwise, false.
  */
 function isInteger(x) {
-  return n % 1 === 0;
+  return x % 1 === 0;
 }
 
 function isPrime(x) {
