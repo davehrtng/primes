@@ -30,7 +30,7 @@ describe('Primes', function() {
       assert.deepEqual(primesLessThan50, primes.listUpTo(50));
     });
 
-    var primesLessThan100 = primesLessThan50.push(53, 59, 61, 67, 71, 73, 79, 83, 89, 97);
+    var primesLessThan100 = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
     it('100 should return ' + ' all primes less than 100', function() {
       assert.deepEqual(primesLessThan100, primes.listUpTo(100));
     });
