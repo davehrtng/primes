@@ -2,8 +2,9 @@
   "name": "primes",
   "version": "1.0.0",
   "description": "A re-implementation of a college Lisp project to explore how closures work in JavaScript. ",
-  "main": "app.js",
+  "main": "primes",
   "scripts": {
+    "start": "node src/app.js",
     "test": "mocha"
   },
   "repository": {
